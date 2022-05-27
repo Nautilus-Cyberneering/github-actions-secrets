@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Print my secret
         run: |
-          echo ${{ secrets.MY_SECRET }} # prints ***
-          echo ${{ secrets.MY_SECRET }} | sed -e 's/\(.\)/\1 /g' # prints the secrets with spaces
+          echo ${{ secrets.MY_REPOSITORY_SECRET }} # prints ***
+          echo ${{ secrets.MY_REPOSITORY_SECRET }} | sed -e 's/\(.\)/\1 /g' # prints the secrets with spaces
