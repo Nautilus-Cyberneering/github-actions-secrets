@@ -1,9 +1,30 @@
+---
 # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs#overview
 name: Disable GITHUB_TOKEN
+
 on:
   push:
   workflow_dispatch:
-permissions: {}  
+
+# You can disable all permissions for GITHUB_TOKEN this way but you get a MegaLinter error
+#permissions: {}
+
+# Explicitly disable all permissions for GITHUB_TOKEN
+permissions:
+  actions: none
+  checks: none
+  contents: none
+  deployments: none
+  id-token: none
+  issues: none
+  discussions: none
+  packages: none
+  pages: none
+  pull-requests: none
+  repository-projects: none
+  security-events: none
+  statuses: none
+
 jobs:
   log-secret:
     runs-on: ubuntu-latest

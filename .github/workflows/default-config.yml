@@ -1,7 +1,10 @@
+---
 name: Default Organization Configuration
+
 on:
   push:
   workflow_dispatch:
+
 jobs:
   log-secret:
     runs-on: ubuntu-latest
