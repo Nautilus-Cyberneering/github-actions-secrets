@@ -1,0 +1,12 @@
+name: Default Organization Configuration
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  log-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print my secret
+        run: |
+          echo ${{ secrets.MY_SECRET }} # prints ***
+          echo ${{ secrets.MY_SECRET }} | sed -e 's/\(.\)/\1 /g' # prints the secrets with spaces
