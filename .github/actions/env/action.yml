@@ -1,0 +1,8 @@
+---
+name: 'Print Env Vars'
+description: 'Print environment variables inside the docker container'
+runs:
+  using: 'docker'
+  image: 'ubuntu:latest'
+  args:
+    - env

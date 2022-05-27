@@ -1,0 +1,14 @@
+---
+name: Print env vars in docker
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  print-env-vars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Print env vars
+        uses: ./.github/actions/env
