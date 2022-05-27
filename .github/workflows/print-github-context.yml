@@ -1,0 +1,21 @@
+---
+# https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
+name: Print GitHub Context
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  print-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub Context
+        env: 
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
+
+
+
+
+
