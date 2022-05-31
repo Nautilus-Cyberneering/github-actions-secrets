@@ -10,6 +10,15 @@
   ],
   "language": "en",
   "noConfigSearch": true,
-  "words": [],
+  "words": [
+    "codeowners",
+    "CODEOWNERS",
+    "Cyberneering",
+    "hostedtoolcache",
+    "josecelano",
+    "megalintermegalinterdocumentationv",
+    "workdir",
+    "zstd"
+  ],
   "version": "0.2"
 }
