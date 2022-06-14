@@ -1,0 +1,6 @@
+name: "typescript-print-env"
+description: "Prints environment variables to the console"
+author: "Jose Celano <jose@nautilus-cyberneering.de>"
+runs:
+  using: "node16"
+  main: "dist/index.js"

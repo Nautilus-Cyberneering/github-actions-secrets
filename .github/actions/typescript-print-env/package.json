@@ -1,0 +1,19 @@
+{
+  "name": "typescript-print-env",
+  "private": true,
+  "description": "It prints the environment variables in the console",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "package": "ncc build --source-map --license licenses.txt",
+    "all": "yarn build && yarn package"
+  },
+  "author": "Nautilus-Cyberneering",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.1.0",
+    "@types/node": "^17.0.42",
+    "@vercel/ncc": "^0.34.0",
+    "typescript": "^3.6.3"
+  }
+}

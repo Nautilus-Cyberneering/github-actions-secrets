@@ -1,0 +1,16 @@
+---
+name: Print env vars in TypeScript action
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  print-env-vars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Print env vars
+
+        uses: ./.github/actions/typescript-print-env
